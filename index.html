@@ -6,71 +6,88 @@
     <meta name="keywords" content="julia, cv, resume" />
     <meta name="description" content="Это сайт - резюме Юлии Бахир" />
     <title>Julia Resume</title>
+    <link rel="stylesheet" href="stylesheet.css" />
   </head>
   <body>
-    <img src="photo.jpg" alt="photo" width="300" />
-    <h1>Julia Bakhir</h1>
-    <p>
-      Я <strong>пытаюсь освоить программирование</strong>. Мне пока что все
-      нравится.
-    </p>
-    <p>Я люблю <em>туризм и спорт.</em></p>
-    <p>А еще я пытаюсь все-таки выучить английский со своего A2 level.</p>
-    <p><strong>Список социальных сетей:</strong></p>
-    <a href="https://vk.com/id11835707" target="_blank" class="btn btn-primary">
-      My Vk
-    </a>
-    <h2><strong>Мои хобби</strong></h2>
-    <ul>
-      <li>Туризм</li>
-      <li>Волейбол</li>
-      <li>Чтение книг</li>
-      <li>Путешествия</li>
-    </ul>
-    <h2><strong>Опыт работы</strong></h2>
-    <table>
-      <thead>
-        <th>Название</th>
-        <th>Должность</th>
-        <th>Период работы</th>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Мясоперерабатывающий завод</td>
-          <td>Экономист</td>
-          <td>2014-2020</td>
-        </tr>
-        <tr>
-          <td>Мясоперерабатывающий завод</td>
-          <td>Главный экономист</td>
-          <td>2020-2023</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="container">
+      <div class="info">
+        <img src="photo.jpg" alt="photo" class="avatar" />
+        <div class="info-text">
+          <h1>Julia Bakhir</h1>
+          <p>Я <strong>пытаюсь освоить программирование.</strong></p>
+          <p>Я люблю <em>туризм и читать.</em></p>
+          <p>И еще я пытаюсь все-таки выучить английский со своего A2 level.</p>
 
-    <h2><strong>Связаться со мной</strong></h2>
-    <form>
-      <div>
-        <label for="name">Ваше имя:</label>
-        <input type="name" id="name" placeholder="Введите имя" />
+          <h4>Список социальных сетей:</h4>
+          <a
+            href="https://vk.com/id11835707"
+            target="_blank"
+            class="btn btn-primary"
+          >
+            My Vk
+          </a>
+        </div>
       </div>
+      <div class="card bg-yellow">
+        <h2><strong>Мои хобби</strong></h2>
+        <ol class="list">
+          <li>Туризм</li>
+          <li>Путешествия</li>
+          <li>Чтение книг</li>
+          <li>Новое* IT</li>
+        </ol>
+      </div>
+      <div class="card bg-green">
+        <h2><strong>Опыт работы</strong></h2>
+        <table class="table">
+          <!-- <thead>
+            <th>Название</th>
+            <th>Должность</th>
+            <th>Период работы</th>
+          </thead> -->
+          <tbody>
+            <tr>
+              <td>Мясоперерабатывающий завод</td>
+              <td>Экономист</td>
+              <td>2014-2020</td>
+            </tr>
+            <tr>
+              <td>Мясоперерабатывающий завод</td>
+              <td>Главный экономист</td>
+              <td>2020-2023</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card bg-red">
+        <form action="/" class="form">
+          <h2>Связаться со мной</h2>
 
-      <div>
-        <label for="email">Ваш email:</label>
-        <input type="email" id="email" placeholder="Введите email" />
-      </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Ваше имя:</label>
+              <input type="name" id="name" placeholder="Введите имя" />
+            </div>
 
-      <div>
-        <label for="message">Ваше сообщение:</label>
-        <br />
-        <textarea
-          id="message"
-          cols="20"
-          rows="5"
-          placeholder="Введите сообщение..."
-        ></textarea>
+            <div class="form-group">
+              <label for="email">Ваш email:</label>
+              <input type="email" id="email" placeholder="Введите email" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Ваше сообщение:</label>
+            <br />
+            <textarea
+              id="message"
+              cols="20"
+              rows="5"
+              placeholder="Введите сообщение..."
+            ></textarea>
+          </div>
+          <button class="btn" type="submit">Отправить</button>
+        </form>
       </div>
-      <button type="submit">Отправить</button>
-    </form>
+    </div>
   </body>
 </html>
